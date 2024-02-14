@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig">
+    <option name="defaultUnitInitialized" value="true" />
+    <option name="renamerInitialized" value="true" />
+    <option name="reverseEngineeringLastDbConnectionId" value="e4d25230-df25-4dc0-ae20-8e8a21bbf8a3" />
+    <option name="reLastEntityCreationPackage" value="src/main/java/com/javarush/budiak/domain" />
+  </component>
+</project>

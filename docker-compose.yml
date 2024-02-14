@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  spring-project-1:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - to-do-db
+    environment:
+      - DATABASE_HOST=to-do-db
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=456321
+      - DATABASE_NAME=todo
+
+  to-do-db:
+    image: mysql:8.0.36
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 456321
+      MYSQL_DATABASE: todo
+    volumes:
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
